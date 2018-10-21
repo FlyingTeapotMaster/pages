@@ -1,1 +1,20 @@
-<html>Hello world!</html>
+<html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127860823-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127860823-1');
+  
+  ga.getAll().forEach( (tracker) => {
+  var id = tracker.get('clientId'); console.log(id)
+})
+  
+</script>
+
+ Hello world!
+
+
+</html>
